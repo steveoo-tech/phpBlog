@@ -7,15 +7,18 @@
 
 
 <body>
-   <article>
+    <article>
 
-    <?= $post; ?>
+        <!-- <h1><?= $post->title; ?></h1> -->
+
+        <div>
+            <?= $post->body; ?>
+        </div>
 
     </article>
 
 
 
-
-<a href="/">Back to homepage</a>
+    <a href="/">Back to homepage</a>
 
 </body>
