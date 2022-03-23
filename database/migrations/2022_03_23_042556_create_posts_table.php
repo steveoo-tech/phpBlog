@@ -8,14 +8,18 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *make:migration 
      * @return void
      */
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('excerpt');
+            $table->text('body');
             $table->timestamps();
+            $table->timestamp('published_at')->nullable();
         });
     }
 
